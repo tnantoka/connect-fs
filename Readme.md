@@ -11,7 +11,7 @@ connect-fs is a FileSystem session store, just copied connect-redis.
 
 ## Options
 
-  - `dir='.'` Direcotry to save session files
+  - `dir='./sessions'` Direcotry to save session files
 
 ## Usage
 
