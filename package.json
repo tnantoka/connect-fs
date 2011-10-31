@@ -1,7 +1,7 @@
 {
   "name": "connect-fs",
   "description": "FileSystem session store for Connect",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "author": "tnantoka <bornneet@livedoor.com>",
   "main": "lib/connect-fs",
   "dependencies": {
