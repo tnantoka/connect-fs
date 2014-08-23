@@ -1,13 +1,17 @@
 {
-  "name": "connect-fs",
+  "name": "connect-fs2",
   "description": "FileSystem session store for Connect",
-  "version": "0.1.1",
+  "version": "0.1.333",
   "author": "tnantoka <bornneet@livedoor.com>",
   "main": "lib/connect-fs",
   "dependencies": {
   },
   "devDependencies": {
     "connect": "1.4.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lexoyo/connect-fs"
   },
   "engines": {
     "node": ">= 0.1.98"
