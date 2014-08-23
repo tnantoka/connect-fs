@@ -1,12 +1,13 @@
 
 # Connect FS
 
-This is a fork of [connect-fs by tnantoka](https://github.com/tnantoka/connect-fs) I had to do because tnantoka's version was not compatible with latest connect/express versions. 
+This is a fork of [connect-fs by tnantoka](https://github.com/tnantoka/connect-fs) I had to do because tnantoka's version was not compatible with latest connect/express versions.
+
 I publish this version [on NPM as connect-fs2](https://www.npmjs.org/package/connect-fs2). It has all contributions and latest PRs merged.
 
 connect-fs is a FileSystem session store, just copied connect-redis.
 
- connect-fs support only connect `>= 1.4.0`.
+ connect-fs support connect `>= 1.4.0` and connect `>=4.0.0`.
 
 ## Installation
 
@@ -19,18 +20,18 @@ connect-fs is a FileSystem session store, just copied connect-redis.
 ## Usage
 
     var connect = require('connect')
-	 	  , FSStore = require('connect-fs2')(connect)
-                  , session = require('express-session')
-                  , cookieParser = require('cookie-parser');
+      , session = require('express-session')
+	 	  , FSStore = require('connect-fs2')(session)
+      , cookieParser = require('cookie-parser');
 
     connect.createServer(
       cookieParser(),
       session({ store: new FSStore, secret: 'your secret' })
     );
 
-  with express    
+  with express
 
-    var FSStore = require('connect-fs2')(express);
+    var FSStore = require('connect-fs2')(session);
 
     app.configure(function() {
       app.set('views', __dirname + '/views');
