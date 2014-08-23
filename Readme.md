@@ -7,7 +7,7 @@ I publish this version [on NPM as connect-fs2](https://www.npmjs.org/package/con
 
 connect-fs is a FileSystem session store, just copied connect-redis.
 
- connect-fs support connect `>= 1.4.0` and connect `>=4.0.0`.
+ connect-fs support only connect `>= 1.4.0`.
 
 ## Installation
 
