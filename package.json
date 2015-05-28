@@ -5,6 +5,7 @@
   "author": "tnantoka <bornneet@livedoor.com>",
   "main": "lib/connect-fs",
   "dependencies": {
+    "json-string": "0.0.1"
   },
   "devDependencies": {
     "connect": "1.4.x",
